@@ -63,8 +63,8 @@
     <schema id="14" parent="5" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-05-13.21:15:22.106</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1178</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-05-13.22:09:31.446</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1184</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -157,45 +157,49 @@
       <ObjectId>17931</ObjectId>
       <StateNumber>1168</StateNumber>
     </table>
-    <column id="35" parent="24" name="al_nome">
+    <view id="35" parent="14" name="mod">
+      <ObjectId>18049</ObjectId>
+      <StateNumber>1184</StateNumber>
+    </view>
+    <column id="36" parent="24" name="al_nome">
       <Position>1</Position>
       <DataType>varchar(40)|0s</DataType>
       <StateNumber>1168</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="36" parent="24" name="al_ca">
+    <column id="37" parent="24" name="al_ca">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1168</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="37" parent="24" name="al_ct">
+    <column id="38" parent="24" name="al_ct">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1168</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="38" parent="24" name="al_nusp">
+    <column id="39" parent="24" name="al_nusp">
       <Position>4</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1168</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="39" parent="24" name="aluno_pkey">
+    <index id="40" parent="24" name="aluno_pkey">
       <ObjectId>17939</ObjectId>
       <ColNames>al_nusp</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="40" parent="24" name="aluno_pkey">
+    <key id="41" parent="24" name="aluno_pkey">
       <ObjectId>17940</ObjectId>
       <ColNames>al_nusp</ColNames>
       <UnderlyingIndexName>aluno_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="41" parent="24" name="al_nusp">
+    <foreign-key id="42" parent="24" name="al_nusp">
       <ObjectId>17941</ObjectId>
       <ColNames>al_nusp</ColNames>
       <RefTableId>17931</RefTableId>
@@ -206,62 +210,62 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="42" parent="25" name="al_nusp">
+    <column id="43" parent="25" name="al_nusp">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1172</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="43" parent="25" name="c_id">
+    <column id="44" parent="25" name="c_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1172</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="44" parent="25" name="di_sigla">
+    <column id="45" parent="25" name="di_sigla">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1172</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="25" name="obrig">
+    <column id="46" parent="25" name="obrig">
       <Position>4</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1172</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <column id="46" parent="25" name="tipo_opt">
+    <column id="47" parent="25" name="tipo_opt">
       <Position>5</Position>
       <DataType>varchar(10)|0s</DataType>
       <StateNumber>1172</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="47" parent="25" name="nota">
+    <column id="48" parent="25" name="nota">
       <Position>6</Position>
       <DataType>double precision|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1172</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="48" parent="25" name="result">
+    <column id="49" parent="25" name="result">
       <Position>7</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1172</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="49" parent="25" name="caminho_pkey">
+    <index id="50" parent="25" name="caminho_pkey">
       <ObjectId>17963</ObjectId>
       <ColNames>al_nusp
 c_id
 di_sigla</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="50" parent="25" name="caminho_pkey">
+    <key id="51" parent="25" name="caminho_pkey">
       <ObjectId>17964</ObjectId>
       <ColNames>al_nusp
 c_id
@@ -269,7 +273,7 @@ di_sigla</ColNames>
       <UnderlyingIndexName>caminho_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="51" parent="25" name="al_nusp">
+    <foreign-key id="52" parent="25" name="al_nusp">
       <ObjectId>17965</ObjectId>
       <ColNames>al_nusp</ColNames>
       <RefTableId>17936</RefTableId>
@@ -280,7 +284,7 @@ di_sigla</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="52" parent="25" name="c_id">
+    <foreign-key id="53" parent="25" name="c_id">
       <ObjectId>17970</ObjectId>
       <ColNames>c_id</ColNames>
       <RefTableId>17953</RefTableId>
@@ -291,7 +295,7 @@ di_sigla</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="53" parent="25" name="di_sigla">
+    <foreign-key id="54" parent="25" name="di_sigla">
       <ObjectId>17975</ObjectId>
       <ColNames>di_sigla</ColNames>
       <RefTableId>17946</RefTableId>
@@ -302,34 +306,34 @@ di_sigla</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="54" parent="26" name="al_nusp">
+    <column id="55" parent="26" name="al_nusp">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1177</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="55" parent="26" name="mod_id">
+    <column id="56" parent="26" name="mod_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1177</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="56" parent="26" name="completos_pkey">
+    <index id="57" parent="26" name="completos_pkey">
       <ObjectId>18021</ObjectId>
       <ColNames>al_nusp
 mod_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="57" parent="26" name="completos_pkey">
+    <key id="58" parent="26" name="completos_pkey">
       <ObjectId>18022</ObjectId>
       <ColNames>al_nusp
 mod_id</ColNames>
       <UnderlyingIndexName>completos_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="58" parent="26" name="al_nusp">
+    <foreign-key id="59" parent="26" name="al_nusp">
       <ObjectId>18023</ObjectId>
       <ColNames>al_nusp</ColNames>
       <RefTableId>17936</RefTableId>
@@ -340,7 +344,7 @@ mod_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="59" parent="26" name="mod_id">
+    <foreign-key id="60" parent="26" name="mod_id">
       <ObjectId>18028</ObjectId>
       <ColNames>mod_id</ColNames>
       <RefTableId>17990</RefTableId>
@@ -351,7 +355,7 @@ mod_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="60" parent="27" name="c_id">
+    <column id="61" parent="27" name="c_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -360,111 +364,111 @@ mod_id</ColNames>
       <TypeId>23</TypeId>
       <SequenceName>curso_c_id_seq</SequenceName>
     </column>
-    <column id="61" parent="27" name="c_nome">
+    <column id="62" parent="27" name="c_nome">
       <Position>2</Position>
       <DataType>varchar(75)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1170</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="62" parent="27" name="c_periodo">
+    <column id="63" parent="27" name="c_periodo">
       <Position>3</Position>
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1170</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="63" parent="27" name="c_hab">
+    <column id="64" parent="27" name="c_hab">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <StateNumber>1170</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="64" parent="27" name="c_dur">
+    <column id="65" parent="27" name="c_dur">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1170</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="65" parent="27" name="curso_pkey">
+    <index id="66" parent="27" name="curso_pkey">
       <ObjectId>17957</ObjectId>
       <ColNames>c_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="66" parent="27" name="secondary">
+    <index id="67" parent="27" name="secondary">
       <ObjectId>17959</ObjectId>
       <ColNames>c_nome
 c_periodo
 c_hab</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="67" parent="27" name="curso_pkey">
+    <key id="68" parent="27" name="curso_pkey">
       <ObjectId>17958</ObjectId>
       <ColNames>c_id</ColNames>
       <UnderlyingIndexName>curso_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="68" parent="28" name="di_sigla">
+    <column id="69" parent="28" name="di_sigla">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1169</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="69" parent="28" name="di_nome">
+    <column id="70" parent="28" name="di_nome">
       <Position>2</Position>
       <DataType>varchar(75)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1169</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="70" parent="28" name="di_ementa">
+    <column id="71" parent="28" name="di_ementa">
       <Position>3</Position>
       <DataType>varchar(75)|0s</DataType>
       <StateNumber>1169</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="71" parent="28" name="di_aula">
+    <column id="72" parent="28" name="di_aula">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1169</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="72" parent="28" name="di_trabalho">
+    <column id="73" parent="28" name="di_trabalho">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1169</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="73" parent="28" name="disciplina_pkey">
+    <index id="74" parent="28" name="disciplina_pkey">
       <ObjectId>17949</ObjectId>
       <ColNames>di_sigla</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="74" parent="28" name="disciplina_pkey">
+    <key id="75" parent="28" name="disciplina_pkey">
       <ObjectId>17950</ObjectId>
       <ColNames>di_sigla</ColNames>
       <UnderlyingIndexName>disciplina_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="75" parent="29" name="di_sigla">
+    <column id="76" parent="29" name="di_sigla">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1176</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="76" parent="29" name="c_id">
+    <column id="77" parent="29" name="c_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1176</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="77" parent="29" name="obrig">
+    <column id="78" parent="29" name="obrig">
       <Position>3</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
@@ -472,33 +476,33 @@ c_hab</ColNames>
       <DefaultExpression>false</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
-    <column id="78" parent="29" name="tipo_opt">
+    <column id="79" parent="29" name="tipo_opt">
       <Position>4</Position>
       <DataType>varchar(10)|0s</DataType>
       <StateNumber>1176</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="79" parent="29" name="sem_idd">
+    <column id="80" parent="29" name="sem_idd">
       <Position>5</Position>
       <DataType>real|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1176</StateNumber>
       <TypeId>700</TypeId>
     </column>
-    <index id="80" parent="29" name="grade_pkey">
+    <index id="81" parent="29" name="grade_pkey">
       <ObjectId>18006</ObjectId>
       <ColNames>di_sigla
 c_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="81" parent="29" name="grade_pkey">
+    <key id="82" parent="29" name="grade_pkey">
       <ObjectId>18007</ObjectId>
       <ColNames>di_sigla
 c_id</ColNames>
       <UnderlyingIndexName>grade_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="82" parent="29" name="di_sigla">
+    <foreign-key id="83" parent="29" name="di_sigla">
       <ObjectId>18013</ObjectId>
       <ColNames>di_sigla</ColNames>
       <RefTableId>17946</RefTableId>
@@ -509,7 +513,7 @@ c_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="83" parent="29" name="c_id">
+    <foreign-key id="84" parent="29" name="c_id">
       <ObjectId>18008</ObjectId>
       <ColNames>c_id</ColNames>
       <RefTableId>17953</RefTableId>
@@ -520,34 +524,34 @@ c_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="84" parent="30" name="al_nusp">
+    <column id="85" parent="30" name="al_nusp">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1178</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="85" parent="30" name="c_id">
+    <column id="86" parent="30" name="c_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1178</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="86" parent="30" name="matricula_pkey">
+    <index id="87" parent="30" name="matricula_pkey">
       <ObjectId>18036</ObjectId>
       <ColNames>al_nusp
 c_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="87" parent="30" name="matricula_pkey">
+    <key id="88" parent="30" name="matricula_pkey">
       <ObjectId>18037</ObjectId>
       <ColNames>al_nusp
 c_id</ColNames>
       <UnderlyingIndexName>matricula_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="88" parent="30" name="al_nusp">
+    <foreign-key id="89" parent="30" name="al_nusp">
       <ObjectId>18038</ObjectId>
       <ColNames>al_nusp</ColNames>
       <RefTableId>17936</RefTableId>
@@ -558,7 +562,7 @@ c_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="89" parent="30" name="c_id">
+    <foreign-key id="90" parent="30" name="c_id">
       <ObjectId>18043</ObjectId>
       <ColNames>c_id</ColNames>
       <RefTableId>17953</RefTableId>
@@ -569,7 +573,7 @@ c_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="90" parent="31" name="mod_id">
+    <column id="91" parent="31" name="mod_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -578,50 +582,50 @@ c_id</ColNames>
       <TypeId>23</TypeId>
       <SequenceName>modulo_mod_id_seq</SequenceName>
     </column>
-    <column id="91" parent="31" name="mod_nome">
+    <column id="92" parent="31" name="mod_nome">
       <Position>2</Position>
       <DataType>varchar(70)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1174</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="92" parent="31" name="mod_trilha">
+    <column id="93" parent="31" name="mod_trilha">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1174</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="93" parent="31" name="mod_nec">
+    <column id="94" parent="31" name="mod_nec">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1174</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="94" parent="31" name="mod_comp">
+    <column id="95" parent="31" name="mod_comp">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1174</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="95" parent="31" name="modulo_pkey">
+    <index id="96" parent="31" name="modulo_pkey">
       <ObjectId>17994</ObjectId>
       <ColNames>mod_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="96" parent="31" name="nome">
+    <index id="97" parent="31" name="nome">
       <ObjectId>18001</ObjectId>
       <ColNames>mod_nome</ColNames>
     </index>
-    <key id="97" parent="31" name="modulo_pkey">
+    <key id="98" parent="31" name="modulo_pkey">
       <ObjectId>17995</ObjectId>
       <ColNames>mod_id</ColNames>
       <UnderlyingIndexName>modulo_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="98" parent="31" name="mod_trilha">
+    <foreign-key id="99" parent="31" name="mod_trilha">
       <ObjectId>17996</ObjectId>
       <ColNames>mod_trilha</ColNames>
       <RefTableId>17982</RefTableId>
@@ -632,35 +636,35 @@ c_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="99" parent="32" name="di_sigla">
+    <column id="100" parent="32" name="di_sigla">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>863</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="100" parent="32" name="c_id">
+    <column id="101" parent="32" name="c_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>863</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="101" parent="32" name="mod_id">
+    <column id="102" parent="32" name="mod_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>863</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="102" parent="32" name="pertence_pkey">
+    <index id="103" parent="32" name="pertence_pkey">
       <ObjectId>17339</ObjectId>
       <ColNames>di_sigla
 c_id
 mod_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="103" parent="32" name="pertence_pkey">
+    <key id="104" parent="32" name="pertence_pkey">
       <ObjectId>17340</ObjectId>
       <ColNames>di_sigla
 c_id
@@ -668,7 +672,7 @@ mod_id</ColNames>
       <UnderlyingIndexName>pertence_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="104" parent="33" name="tr_id">
+    <column id="105" parent="33" name="tr_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -677,55 +681,80 @@ mod_id</ColNames>
       <TypeId>23</TypeId>
       <SequenceName>trilha_tr_id_seq</SequenceName>
     </column>
-    <column id="105" parent="33" name="tr_nome">
+    <column id="106" parent="33" name="tr_nome">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1173</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="106" parent="33" name="trilha_pkey">
+    <index id="107" parent="33" name="trilha_pkey">
       <ObjectId>17986</ObjectId>
       <ColNames>tr_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="107" parent="33" name="trilha_pkey">
+    <key id="108" parent="33" name="trilha_pkey">
       <ObjectId>17987</ObjectId>
       <ColNames>tr_id</ColNames>
       <UnderlyingIndexName>trilha_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="108" parent="34" name="user_nusp">
+    <column id="109" parent="34" name="user_nusp">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1167</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="109" parent="34" name="user_email">
+    <column id="110" parent="34" name="user_email">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1167</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="110" parent="34" name="user_psw">
+    <column id="111" parent="34" name="user_psw">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1167</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="111" parent="34" name="users_pkey">
+    <index id="112" parent="34" name="users_pkey">
       <ObjectId>17934</ObjectId>
       <ColNames>user_nusp</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="112" parent="34" name="users_pkey">
+    <key id="113" parent="34" name="users_pkey">
       <ObjectId>17935</ObjectId>
       <ColNames>user_nusp</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <column id="114" parent="35" name="mod_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1184</StateNumber>
+    </column>
+    <column id="115" parent="35" name="mod_nome">
+      <Position>2</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <StateNumber>1184</StateNumber>
+    </column>
+    <column id="116" parent="35" name="mod_trilha">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1184</StateNumber>
+    </column>
+    <column id="117" parent="35" name="mod_nec">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1184</StateNumber>
+    </column>
+    <column id="118" parent="35" name="mod_comp">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1184</StateNumber>
+    </column>
   </database-model>
 </dataSource>

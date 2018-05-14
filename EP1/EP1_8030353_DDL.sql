@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS grade (
   c_id INT NOT NULL,
   obrig BOOLEAN NOT NULL DEFAULT FALSE,
   tipo_opt VARCHAR(10) NULL,
-  sem_idd REAL NOT NULL,
+  sem_idd INT NOT NULL,
   PRIMARY KEY (di_sigla, c_id),
   CONSTRAINT c_id
     FOREIGN KEY (c_id)
