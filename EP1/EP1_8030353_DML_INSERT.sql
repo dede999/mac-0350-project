@@ -97,6 +97,30 @@ INSERT INTO disciplina(di_sigla, di_nome, di_ementa, di_aula, di_trabalho) VALUE
 INSERT INTO disciplina(di_sigla, di_nome, di_ementa, di_aula, di_trabalho) VALUES ('MAE0217',	'Estatística Descritiva', '', 4, 0);
 INSERT INTO disciplina(di_sigla, di_nome, di_ementa, di_aula, di_trabalho) VALUES ('FLC0474',	'Língua Portuguesa', '', 3, 0);
 
+
+-- -------------------------------
+-- Trilhas
+-- -------------------------------
+
+INSERT INTO trilha(tr_nome) VALUES ('Trilha Teste');
+INSERT INTO trilha(tr_nome) VALUES ('Ciência de Dados');
+INSERT INTO trilha(tr_nome) VALUES ('Inteligência Artificial');
+INSERT INTO trilha(tr_nome) VALUES ('Sistemas de Software');
+INSERT INTO trilha(tr_nome) VALUES ('Teoria da Computação');
+
+
+-- -------------------------------
+-- Módulos
+-- -------------------------------
+
+INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 1', 1, 3, 0);
+INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 2', 2, 3, 0);
+INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 3', 1, 3, 0);
+INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 4', 2, 3, 0);
+INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 5', 1, 3, 0);
+
+
+
 -- -------------------------------
 -- Matricula
 -- -------------------------------
@@ -109,25 +133,6 @@ INSERT INTO matricula(al_nusp, c_id) VALUES ('90088322', 3);
 INSERT INTO matricula(al_nusp, c_id) VALUES ('749384957', 5);
 
 
--- -------------------------------
--- Trilhas
--- -------------------------------
-
-INSERT INTO trilha(tr_nome) VALUES ('Trilha Teste');
-INSERT INTO trilha(tr_nome) VALUES ('Ciência de Dados');
-INSERT INTO trilha(tr_nome) VALUES ('Inteligência Artificial');
-INSERT INTO trilha(tr_nome) VALUES ('Sistemas de Software');
-INSERT INTO trilha(tr_nome) VALUES ('Teoria da Computação');
-
--- -------------------------------
--- Módulos
--- -------------------------------
-
-INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 1', 1, 3, 0);
-INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 2', 2, 3, 0);
-INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 3', 1, 3, 0);
-INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 4', 2, 3, 0);
-INSERT INTO modulo(mod_nome, mod_trilha, mod_nec, mod_comp) VALUES ('Mod Teste 5', 1, 3, 0);
 
 -- -------------------------------
 -- Grade
@@ -157,6 +162,9 @@ INSERT INTO caminho(al_nusp, c_id, di_sigla, obrig, tipo_opt, nota, result) VALU
 INSERT INTO caminho(al_nusp, c_id, di_sigla, obrig, tipo_opt, nota, result) VALUES ('749384957', 1, 'MAC0352', false , 'livre', 9.9, 'A');
 INSERT INTO caminho(al_nusp, c_id, di_sigla, obrig, tipo_opt, nota, result) VALUES ('749384957', 1, 'MAC0444', false , 'livre', 6.0, 'A');
 INSERT INTO caminho(al_nusp, c_id, di_sigla, obrig, tipo_opt, nota, result) VALUES ('749384957', 1, 'MAC0460', false , 'livre', 5.0, 'A');
+INSERT INTO caminho(al_nusp, c_id, di_sigla, obrig, tipo_opt, nota, result) VALUES ('98765432', 1, 'MAC0121', true , '', 6.9, 'A');
+INSERT INTO caminho(al_nusp, c_id, di_sigla, obrig, tipo_opt, nota, result) VALUES ('98765432', 1, 'MAC0426', false , 'eletiva', 7.3, 'A');
+INSERT INTO caminho(al_nusp, c_id, di_sigla, obrig, tipo_opt, nota, result) VALUES ('00112233', 1, 'MAC0121', true , '', 8.9, 'A');
 
 -- -------------------------------
 -- Pertence
